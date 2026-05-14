@@ -124,7 +124,7 @@ def add_rows(total: list[list[float]], rows: list[list[float]]) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--ds4", default="./ds4", help="path to the ds4 CLI")
-    ap.add_argument("--model", default="ds4flash.gguf", help="GGUF model path")
+    ap.add_argument("--model", default="/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf", help="GGUF model path")
     ap.add_argument("--good-file", required=True,
                     help="desired/target prompts, one per line")
     ap.add_argument("--bad-file", required=True,

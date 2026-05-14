@@ -64,7 +64,7 @@ static void usage(FILE *fp) {
         "      System prompt used only with --chat-prompt-file.\n"
         "\n"
         "Model and backend:\n"
-        "  -m, --model FILE       GGUF model path. Default: ds4flash.gguf\n"
+        "  -m, --model FILE       GGUF model path. Default: /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf\n"
         "  --metal | --cuda | --cpu | --backend NAME\n"
         "      Select backend explicitly. Defaults to Metal on macOS, CUDA elsewhere.\n"
         "  -t, --threads N        CPU helper threads.\n"
@@ -175,7 +175,7 @@ static char *read_file(const char *path) {
 
 static bench_config parse_options(int argc, char **argv) {
     bench_config c = {
-        .model_path = "ds4flash.gguf",
+        .model_path = "/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf",
         .system = "You are a helpful assistant.",
         .backend = default_backend(),
         .ctx_start = 2048,

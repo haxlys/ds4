@@ -71418,7 +71418,7 @@ non-imatrix quants:
 
 The script downloads from `https://huggingface.co/antirez/deepseek-v4-gguf`,
 stores files under `./gguf/`, resumes partial downloads with `curl -C -`, and
-updates `./ds4flash.gguf` to point at the selected q2-imatrix/q4-imatrix/q2/q4
+updates `.//Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf` to point at the selected q2-imatrix/q4-imatrix/q2/q4
 model. The plain q2 XXS weights are produced with the weights importance vector
 only, without an imatrix. The imatrix variants are preferred.
 Authentication is optional for public downloads, but `--token TOKEN`,
@@ -71444,7 +71444,7 @@ make cuda-generic     # Linux CUDA, other local CUDA GPUs
 make cpu              # CPU-only diagnostics build
 ```
 
-`./ds4flash.gguf` is the default model path used by both binaries. Pass `-m` to
+`.//Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf` is the default model path used by both binaries. Pass `-m` to
 select another supported GGUF from `./gguf/`. Run `./ds4 --help` and<｜Assistant｜></think>
 
 ===== DS4_IMATRIX_PROMPT long_context-bca7431b9a0e long_context think codebase:eval-imatrix =====
@@ -71647,7 +71647,7 @@ non-imatrix quants:
 
 The script downloads from `https://huggingface.co/antirez/deepseek-v4-gguf`,
 stores files under `./gguf/`, resumes partial downloads with `curl -C -`, and
-updates `./ds4flash.gguf` to point at the selected q2-imatrix/q4-imatrix/q2/q4
+updates `.//Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf` to point at the selected q2-imatrix/q4-imatrix/q2/q4
 model. The plain q2 XXS weights are produced with the weights importance vector
 only, without an imatrix. The imatrix variants are preferred.
 Authentication is optional for public downloads, but `--token TOKEN`,
@@ -71673,7 +71673,7 @@ make cuda-generic     # Linux CUDA, other local CUDA GPUs
 make cpu              # CPU-only diagnostics build
 ```
 
-`./ds4flash.gguf` is the default model path used by both binaries. Pass `-m` to
+`.//Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf` is the default model path used by both binaries. Pass `-m` to
 select another supported GGUF from `./gguf/`. Run `./ds4 --help` and<｜Assistant｜><think>
 
 ===== DS4_IMATRIX_PROMPT long_context-26150cee1cfa long_context nothink codebase:metal-moe =====
@@ -74518,7 +74518,7 @@ greedy non-EOS probe, restores the memory snapshot, and continues prefill.
 
 ```sh
 ./ds4-bench \
-  -m ds4flash.gguf \
+  -m /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf \
   --prompt-file speed-bench/promessi_sposi.txt \
   --ctx-start 2048 \
   --ctx-max 65536 \
@@ -74546,7 +74546,7 @@ the final answer, and prints a per-question report with prompt tokens,
 generated tokens, pass/fail state, the model answer, and the correct answer.
 
 ```sh
-./ds4-eval -m ds4flash.gguf --trace /tmp/ds4-eval.txt
+./ds4-eval -m /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf --trace /tmp/ds4-eval.txt
 ```
 
 The default run uses `--ctx 100000` and `--tokens 16000`, thinking mode enabled,
@@ -74837,7 +74837,7 @@ greedy non-EOS probe, restores the memory snapshot, and continues prefill.
 
 ```sh
 ./ds4-bench \
-  -m ds4flash.gguf \
+  -m /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf \
   --prompt-file speed-bench/promessi_sposi.txt \
   --ctx-start 2048 \
   --ctx-max 65536 \
@@ -74865,7 +74865,7 @@ the final answer, and prints a per-question report with prompt tokens,
 generated tokens, pass/fail state, the model answer, and the correct answer.
 
 ```sh
-./ds4-eval -m ds4flash.gguf --trace /tmp/ds4-eval.txt
+./ds4-eval -m /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf --trace /tmp/ds4-eval.txt
 ```
 
 The default run uses `--ctx 100000` and `--tokens 16000`, thinking mode enabled,
@@ -79481,7 +79481,7 @@ non-imatrix quants:
 
 The script downloads from `https://huggingface.co/antirez/deepseek-v4-gguf`,
 stores files under `./gguf/`, resumes partial downloads with `curl -C -`, and
-updates `./ds4flash.gguf` to point at the selected q2-imatrix/q4-imatrix/q2/q4
+updates `.//Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf` to point at the selected q2-imatrix/q4-imatrix/q2/q4
 model. The plain q2 XXS weights are produced with the weights importance vector
 only, without an imatrix. The imatrix variants are preferred.
 Authentication is optional for public downloads, but `--token TOKEN`,
@@ -79507,7 +79507,7 @@ make cuda-generic     # Linux CUDA, other local CUDA GPUs
 make cpu              # CPU-only diagnostics build
 ```
 
-`./ds4flash.gguf` is the default model path used by both binaries. Pass `-m` to
+`.//Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf` is the default model path used by both binaries. Pass `-m` to
 select another supported GGUF from `./gguf/`. Run `./ds4 --help` and
 `./ds4-server --help` for the full flag list.
 
@@ -79556,7 +79556,7 @@ non-imatrix quants:
 
 The script downloads from `https://huggingface.co/antirez/deepseek-v4-gguf`,
 stores files under `./gguf/`, resumes partial downloads with `curl -C -`, and
-updates `./ds4flash.gguf` to point at the selected q2-imatrix/q4-imatrix/q2/q4
+updates `.//Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf` to point at the selected q2-imatrix/q4-imatrix/q2/q4
 model. The plain q2 XXS weights are produced with the weights importance vector
 only, without an imatrix. The imatrix variants are preferred.
 Authentication is optional for public downloads, but `--token TOKEN`,
@@ -79582,7 +79582,7 @@ make cuda-generic     # Linux CUDA, other local CUDA GPUs
 make cpu              # CPU-only diagnostics build
 ```
 
-`./ds4flash.gguf` is the default model path used by both binaries. Pass `-m` to
+`.//Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf` is the default model path used by both binaries. Pass `-m` to
 select another supported GGUF from `./gguf/`. Run `./ds4 --help` and
 `./ds4-server --help` for the full flag list.
 
@@ -79627,7 +79627,7 @@ greedy non-EOS probe, restores the memory snapshot, and continues prefill.
 
 ```sh
 ./ds4-bench \
-  -m ds4flash.gguf \
+  -m /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf \
   --prompt-file speed-bench/promessi_sposi.txt \
   --ctx-start 2048 \
   --ctx-max 65536 \
@@ -79655,7 +79655,7 @@ the final answer, and prints a per-question report with prompt tokens,
 generated tokens, pass/fail state, the model answer, and the correct answer.
 
 ```sh
-./ds4-eval -m ds4flash.gguf --trace /tmp/ds4-eval.txt
+./ds4-eval -m /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf --trace /tmp/ds4-eval.txt
 ```
 
 The default run uses `--ctx 100000` and `--tokens 16000`, thinking mode enabled,
@@ -79698,7 +79698,7 @@ greedy non-EOS probe, restores the memory snapshot, and continues prefill.
 
 ```sh
 ./ds4-bench \
-  -m ds4flash.gguf \
+  -m /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf \
   --prompt-file speed-bench/promessi_sposi.txt \
   --ctx-start 2048 \
   --ctx-max 65536 \
@@ -79726,7 +79726,7 @@ the final answer, and prints a per-question report with prompt tokens,
 generated tokens, pass/fail state, the model answer, and the correct answer.
 
 ```sh
-./ds4-eval -m ds4flash.gguf --trace /tmp/ds4-eval.txt
+./ds4-eval -m /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf --trace /tmp/ds4-eval.txt
 ```
 
 The default run uses `--ctx 100000` and `--tokens 16000`, thinking mode enabled,
@@ -125932,7 +125932,7 @@ static void usage(FILE *fp) {
         "\n"
         "Model and runtime:\n"
         "  -m, --model FILE\n"
-        "      GGUF model path. Default: ds4flash.gguf\n"
+        "      GGUF model path. Default: /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf\n"
         "  --mtp FILE\n"
         "      Optional MTP support GGUF used for draft-token probes.\n"
         "  --mtp-draft N\n"
@@ -126032,7 +126032,7 @@ static void usage(FILE *fp) {
         "\n"
         "Model and runtime:\n"
         "  -m, --model FILE\n"
-        "      GGUF model path. Default: ds4flash.gguf\n"
+        "      GGUF model path. Default: /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf\n"
         "  --mtp FILE\n"
         "      Optional MTP support GGUF used for draft-token probes.\n"
         "  --mtp-draft N\n"
@@ -127382,7 +127382,7 @@ File: ds4_cli.c
 static cli_config parse_options(int argc, char **argv) {
     cli_config c = {
         .engine = {
-            .model_path = "ds4flash.gguf",
+            .model_path = "/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf",
             .backend = default_backend(),
             .mtp_draft_tokens = 1,
             .mtp_margin = 3.0f,
@@ -127462,7 +127462,7 @@ File: ds4_cli.c
 static cli_config parse_options(int argc, char **argv) {
     cli_config c = {
         .engine = {
-            .model_path = "ds4flash.gguf",
+            .model_path = "/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf",
             .backend = default_backend(),
             .mtp_draft_tokens = 1,
             .mtp_margin = 3.0f,
@@ -181568,7 +181568,7 @@ static void usage(FILE *fp) {
         "\n"
         "Model and runtime:\n"
         "  -m, --model FILE\n"
-        "      GGUF model path. Default: ds4flash.gguf\n"
+        "      GGUF model path. Default: /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf\n"
         "  --mtp FILE\n"
         "      Optional MTP support GGUF used for draft-token probes.\n"
         "  --mtp-draft N\n"
@@ -181654,7 +181654,7 @@ static void usage(FILE *fp) {
         "\n"
         "Model and runtime:\n"
         "  -m, --model FILE\n"
-        "      GGUF model path. Default: ds4flash.gguf\n"
+        "      GGUF model path. Default: /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf\n"
         "  --mtp FILE\n"
         "      Optional MTP support GGUF used for draft-token probes.\n"
         "  --mtp-draft N\n"
@@ -181902,7 +181902,7 @@ static ds4_backend default_server_backend(void) {
 static server_config parse_options(int argc, char **argv) {
     server_config c = {
         .engine = {
-            .model_path = "ds4flash.gguf",
+            .model_path = "/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf",
             .backend = default_server_backend(),
             .mtp_draft_tokens = 1,
             .mtp_margin = 3.0f,
@@ -181973,7 +181973,7 @@ static ds4_backend default_server_backend(void) {
 static server_config parse_options(int argc, char **argv) {
     server_config c = {
         .engine = {
-            .model_path = "ds4flash.gguf",
+            .model_path = "/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf",
             .backend = default_server_backend(),
             .mtp_draft_tokens = 1,
             .mtp_margin = 3.0f,

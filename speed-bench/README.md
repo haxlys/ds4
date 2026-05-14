@@ -6,7 +6,7 @@ Run `ds4-bench` as:
 
 ```
 ./ds4-bench \
-  -m ds4flash.gguf \
+  -m ~/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf \
   --prompt-file speed-bench/promessi_sposi.txt \
   --ctx-start 2048 \
   --ctx-max 65536 \
