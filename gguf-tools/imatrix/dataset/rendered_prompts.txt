@@ -7780,8 +7780,8 @@ Download one main model:
 ```
 
 The script downloads from `https://huggingface.co/antirez/deepseek-v4-gguf`,
-stores files under `./gguf/`, resumes partial downloads with `curl -C -`, and
-updates `./ds4flash.gguf` to point at the selected q2/q4 model. Authentication
+stores files under `~/models/gguf/deepseek-v4-gguf`, resumes partial downloads with `curl -C -`, and
+updates `/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf` to point at the selected q2/q4 model. Authentication
 is optional for public downloads, but `--token TOKEN`, `HF_TOKEN`, or the local
 Hugging Face token cache are used when present.
 
@@ -7797,8 +7797,8 @@ Then build:
 make
 ```
 
-`./ds4flash.gguf` is the default model path used by both binaries. Pass `-m` to
-select another supported GGUF from `./gguf/`. Run `./ds4 --help` and
+The q2-imatrix file under `~/models/gguf/deepseek-v4-gguf` is the default model path used by both binaries. Pass `-m` to
+select another supported GGUF from `~/models/gguf/deepseek-v4-gguf`. Run `./ds4 --help` and
 `./ds4-server --help` for the full flag list.
 
 ## Speed
@@ -8266,8 +8266,8 @@ Download one main model:
 ```
 
 The script downloads from `https://huggingface.co/antirez/deepseek-v4-gguf`,
-stores files under `./gguf/`, resumes partial downloads with `curl -C -`, and
-updates `./ds4flash.gguf` to point at the selected q2/q4 model. Authentication
+stores files under `~/models/gguf/deepseek-v4-gguf`, resumes partial downloads with `curl -C -`, and
+updates `/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf` to point at the selected q2/q4 model. Authentication
 is optional for public downloads, but `--token TOKEN`, `HF_TOKEN`, or the local
 Hugging Face token cache are used when present.
 
@@ -8283,8 +8283,8 @@ Then build:
 make
 ```
 
-`./ds4flash.gguf` is the default model path used by both binaries. Pass `-m` to
-select another supported GGUF from `./gguf/`. Run `./ds4 --help` and
+The q2-imatrix file under `~/models/gguf/deepseek-v4-gguf` is the default model path used by both binaries. Pass `-m` to
+select another supported GGUF from `~/models/gguf/deepseek-v4-gguf`. Run `./ds4 --help` and
 `./ds4-server --help` for the full flag list.
 
 ## Speed
@@ -10064,8 +10064,8 @@ Download one main model:
 ```
 
 The script downloads from `https://huggingface.co/antirez/deepseek-v4-gguf`,
-stores files under `./gguf/`, resumes partial downloads with `curl -C -`, and
-updates `./ds4flash.gguf` to point at the selected q2/q4 model. Authentication
+stores files under `~/models/gguf/deepseek-v4-gguf`, resumes partial downloads with `curl -C -`, and
+updates `/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf` to point at the selected q2/q4 model. Authentication
 is optional for public downloads, but `--token TOKEN`, `HF_TOKEN`, or the local
 Hugging Face token cache are used when present.
 
@@ -10081,8 +10081,8 @@ Then build:
 make
 ```
 
-`./ds4flash.gguf` is the default model path used by both binaries. Pass `-m` to
-select another supported GGUF from `./gguf/`. Run `./ds4 --help` and
+The q2-imatrix file under `~/models/gguf/deepseek-v4-gguf` is the default model path used by both binaries. Pass `-m` to
+select another supported GGUF from `~/models/gguf/deepseek-v4-gguf`. Run `./ds4 --help` and
 `./ds4-server --help` for the full flag list.
 
 ## Speed
@@ -10149,8 +10149,8 @@ Download one main model:
 ```
 
 The script downloads from `https://huggingface.co/antirez/deepseek-v4-gguf`,
-stores files under `./gguf/`, resumes partial downloads with `curl -C -`, and
-updates `./ds4flash.gguf` to point at the selected q2/q4 model. Authentication
+stores files under `~/models/gguf/deepseek-v4-gguf`, resumes partial downloads with `curl -C -`, and
+updates `/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf` to point at the selected q2/q4 model. Authentication
 is optional for public downloads, but `--token TOKEN`, `HF_TOKEN`, or the local
 Hugging Face token cache are used when present.
 
@@ -10166,8 +10166,8 @@ Then build:
 make
 ```
 
-`./ds4flash.gguf` is the default model path used by both binaries. Pass `-m` to
-select another supported GGUF from `./gguf/`. Run `./ds4 --help` and
+The q2-imatrix file under `~/models/gguf/deepseek-v4-gguf` is the default model path used by both binaries. Pass `-m` to
+select another supported GGUF from `~/models/gguf/deepseek-v4-gguf`. Run `./ds4 --help` and
 `./ds4-server --help` for the full flag list.
 
 ## Speed
@@ -56552,7 +56552,7 @@ static void usage(FILE *fp) {
         "\n"
         "Model and runtime:\n"
         "  -m, --model FILE\n"
-        "      GGUF model path. Default: ds4flash.gguf\n"
+        "      GGUF model path. Default: /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf\n"
         "  --mtp FILE\n"
         "      Optional MTP support GGUF used for draft-token probes.\n"
         "  --mtp-draft N\n"
@@ -56652,7 +56652,7 @@ static void usage(FILE *fp) {
         "\n"
         "Model and runtime:\n"
         "  -m, --model FILE\n"
-        "      GGUF model path. Default: ds4flash.gguf\n"
+        "      GGUF model path. Default: /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf\n"
         "  --mtp FILE\n"
         "      Optional MTP support GGUF used for draft-token probes.\n"
         "  --mtp-draft N\n"
@@ -58002,7 +58002,7 @@ File: ds4_cli.c
 static cli_config parse_options(int argc, char **argv) {
     cli_config c = {
         .engine = {
-            .model_path = "ds4flash.gguf",
+            .model_path = "/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf",
             .backend = default_backend(),
             .mtp_draft_tokens = 1,
             .mtp_margin = 3.0f,
@@ -58082,7 +58082,7 @@ File: ds4_cli.c
 static cli_config parse_options(int argc, char **argv) {
     cli_config c = {
         .engine = {
-            .model_path = "ds4flash.gguf",
+            .model_path = "/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf",
             .backend = default_backend(),
             .mtp_draft_tokens = 1,
             .mtp_margin = 3.0f,
@@ -100978,7 +100978,7 @@ static void usage(FILE *fp) {
         "\n"
         "Model and runtime:\n"
         "  -m, --model FILE\n"
-        "      GGUF model path. Default: ds4flash.gguf\n"
+        "      GGUF model path. Default: /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf\n"
         "  --mtp FILE\n"
         "      Optional MTP support GGUF used for draft-token probes.\n"
         "  --mtp-draft N\n"
@@ -101050,7 +101050,7 @@ static void usage(FILE *fp) {
         "\n"
         "Model and runtime:\n"
         "  -m, --model FILE\n"
-        "      GGUF model path. Default: ds4flash.gguf\n"
+        "      GGUF model path. Default: /Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf\n"
         "  --mtp FILE\n"
         "      Optional MTP support GGUF used for draft-token probes.\n"
         "  --mtp-draft N\n"
@@ -101225,7 +101225,7 @@ static ds4_backend default_server_backend(void) {
 static server_config parse_options(int argc, char **argv) {
     server_config c = {
         .engine = {
-            .model_path = "ds4flash.gguf",
+            .model_path = "/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf",
             .backend = default_server_backend(),
             .mtp_draft_tokens = 1,
             .mtp_margin = 3.0f,
@@ -101297,7 +101297,7 @@ static ds4_backend default_server_backend(void) {
 static server_config parse_options(int argc, char **argv) {
     server_config c = {
         .engine = {
-            .model_path = "ds4flash.gguf",
+            .model_path = "/Users/haxlys/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf",
             .backend = default_server_backend(),
             .mtp_draft_tokens = 1,
             .mtp_margin = 3.0f,

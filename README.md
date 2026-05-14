@@ -114,10 +114,11 @@ non-imatrix quants:
 ```
 
 The script downloads from `https://huggingface.co/antirez/deepseek-v4-gguf`,
-stores files under `./gguf/`, resumes partial downloads with `curl -C -`, and
-updates `./ds4flash.gguf` to point at the selected q2-imatrix/q4-imatrix/q2/q4
-model. The plain q2 XXS weights are produced with the weights importance vector
-only, without an imatrix. The imatrix variants are preferred.
+stores files under `~/models/gguf/deepseek-v4-gguf` by default, and resumes
+partial downloads with `curl -C -`. This local stack passes GGUF paths directly
+instead of creating repository-local model compatibility symlinks. The plain q2 XXS
+weights are produced with the weights importance vector only, without an
+imatrix. The imatrix variants are preferred.
 Authentication is optional for public downloads, but `--token TOKEN`,
 `HF_TOKEN`, or the local Hugging Face token cache are used when present.
 
@@ -141,9 +142,10 @@ make cuda-generic     # Linux CUDA, other local CUDA GPUs
 make cpu              # CPU-only diagnostics build
 ```
 
-`./ds4flash.gguf` is the default model path used by both binaries. Pass `-m` to
-select another supported GGUF from `./gguf/`. Run `./ds4 --help` and
-`./ds4-server --help` for the full flag list.
+The local default model path used by the binaries is the q2-imatrix file under
+`~/models/gguf/deepseek-v4-gguf`. Pass `-m` to select another supported GGUF
+from that directory. Run `./ds4 --help` and `./ds4-server --help` for the full
+flag list.
 
 ## Speed
 
@@ -177,7 +179,7 @@ greedy non-EOS probe, restores the memory snapshot, and continues prefill.
 
 ```sh
 ./ds4-bench \
-  -m ds4flash.gguf \
+  -m ~/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf \
   --prompt-file speed-bench/promessi_sposi.txt \
   --ctx-start 2048 \
   --ctx-max 65536 \

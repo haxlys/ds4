@@ -49,7 +49,8 @@ What they cover:
   emission in both fast and exact paths.
 - `--metal-kernels`: isolated Metal kernel numeric checks.
 
-The runner defaults to `ds4flash.gguf`. Override paths when needed:
+The runner defaults to the q2-imatrix file under
+`~/models/gguf/deepseek-v4-gguf`. Override paths when needed:
 
 ```sh
 DS4_TEST_MODEL=/path/to/model.gguf ./ds4_test --logprob-vectors
@@ -113,7 +114,7 @@ Default linear sweep:
 
 ```sh
 ./ds4-bench \
-  -m ds4flash.gguf \
+  -m ~/models/gguf/deepseek-v4-gguf/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix.gguf \
   --prompt-file speed-bench/promessi_sposi.txt \
   --ctx-start 2048 \
   --ctx-max 65536 \
